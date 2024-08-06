@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         hintList.innerHTML = ''; // Clear existing hints
 
-        if (hints.hint1 && hints.hint2 && hints.hint3 && hints.hint4 && hints.hint5) {
+        if (hints.hint1 && hints.hint2 ) {
             hintLevels.forEach((hint, index) => {
                 const li = document.createElement('li');
                 li.innerHTML = `
