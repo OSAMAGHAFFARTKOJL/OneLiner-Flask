@@ -26,7 +26,7 @@ def get_ai_response(prompt, option):
             messages=[
                 {
                     "role": "system",
-                    "content": f"You are a helpful assistant for {option} problems.Dont answer to the question other than coding and math Don't give the exact answer first and provide meaningful responses only to highly valid queries and don't give response to non-sensical or irrelevant inputs just say sorry it is irrelevant question"
+                    "content": f"You are a helpful assistant for {option} problems.Dont answer to the question other than coding and math problems. Don't give the exact answer first and provide meaningful responses only to highly valid queries and don't give response to non-sensical or irrelevant inputs just say sorry it is irrelevant question"
                 },
                 {
                     "role": "user",
@@ -53,7 +53,7 @@ def get_hints():
     try:
         data = request.json
         problem = data.get('problem')
-        problem_type = data.get('type', 'Unknown')
+        problem_type = data.get('type', 'Math')
 
         if not problem:
             return jsonify({'error': 'No problem provided'}), 400
