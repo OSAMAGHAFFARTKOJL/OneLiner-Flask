@@ -52,8 +52,8 @@ def get_ai_response(prompt, option):
 def get_hints():
     try:
         data = request.json
-        problem = data.get('problem')
-        problem_type = data.get('type', 'Math')
+        problem = data.get("problem")
+        problem_type = data.get("type", "Math")
 
         if not problem:
             return jsonify({'error': 'No problem provided'}), 400
