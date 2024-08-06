@@ -32,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('currentProblem', problem);
         localStorage.setItem('problemType', problemType);
         if (problem) {
-            
             await fetchHints(problem, problemType);
         }
     });
@@ -42,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Show loader
             loader.style.display = 'flex';
             hintList.innerHTML = ''; // Clear existing hints
+            clearPreviousOutput(); // Clear any previous output
 
             const response = await fetch('/api/get_hints', {
                 method: 'POST',
@@ -67,6 +67,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    function clearPreviousOutput() {
+        // Clear any previous appended paragraph elements
+        const parentElement = hintList.parentNode;
+        const paragraphElements = parentElement.querySelectorAll('p');
+        paragraphElements.forEach(paragraph => paragraph.remove());
+    }
+
     function displayHints(hints) {
         const hintLevels = [
             { label: 'Level 1', content: hints.hint1 },
@@ -78,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         hintList.innerHTML = ''; // Clear existing hints
 
-        if (hints.hint1 && hints.hint2) {
+        if (hints.hint1 && hints.hint2 && hints.hint3 && hints.hint4 && hints.hint5) {
             hintLevels.forEach((hint, index) => {
                 const li = document.createElement('li');
                 li.innerHTML = `
