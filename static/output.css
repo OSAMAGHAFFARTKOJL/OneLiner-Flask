@@ -54,8 +54,8 @@ p {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-    width: 70%;
-    max-width: 70%;
+    width: 100%;
+    max-width: 100%;
 }
 
 .answer-section {
@@ -121,11 +121,7 @@ p {
     margin-top: 10px;
     margin-right: 600px ;
 }
-i{
-    position:absolute;
-    top:30%;
-    left:55%
-}
+
 .submit-btn:hover {
     background: linear-gradient(135deg, #005f99, #004472);
     transform: translateY(-3px);
@@ -421,5 +417,7 @@ i{
     .keyboard button {
         padding: 6px;
         font-size: 0.8rem;
+    }
+}8rem;
     }
 }
