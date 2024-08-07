@@ -1,7 +1,5 @@
-Here's a README file for your project, including sections for an overview, features, installation, usage, and advanced details:
 
 ---
-
 # OneLiner
 
 OneLiner is a web application designed to provide smart hints and solutions for various types of problems, including coding and math challenges. The application features a user-friendly interface where users can input problems, receive hints, and interact with an on-screen calculator.
@@ -88,4 +86,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-This README provides a comprehensive overview of your project, including how to install and use it, as well as details on advanced features and customization. Adjust the URLs and specific details as needed for your project.
+
