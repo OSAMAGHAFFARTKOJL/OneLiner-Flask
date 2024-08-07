@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OneLiner</title>
     <link rel="stylesheet" href="../static/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -20,17 +21,64 @@
 
             <div class="answer-section">
                 <div class="input-container">
-                    <input type="text" class="answer-input" placeholder="Enter your Question">
-                    
-                    <select class="problem-type">
+                    <input type="text" class="answer-input" id="problemInput" placeholder="Enter your Question">
+                    <i class="fas fa-calculator" id="calculatorIcon"></i>
+                    <select class="problem-type" id="problemType">
                         <option value="Coding">Coding</option>
                         <option value="Math">Math</option>
-                    
                     </select>
+                    <div id="mathKeyboard" class="math-keyboard" style="display: none;">
+                        <button class="close-button" id="closeCalculator">×</button>
+                        <div id="display" class="display">Enter a problem</div>
+                        <div class="keyboard">
+                            <!-- Calculator buttons -->
+                            <button onclick="handleButtonClick('(')">(</button>
+                            <button onclick="handleButtonClick(')')">)</button>
+                            <button onclick="handleButtonClick('[')">[</button>
+                            <button onclick="handleButtonClick(']')">]</button>
+                            <button onclick="handleButtonClick('√')">√</button>
+                            <button onclick="handleButtonClick('^')">^</button>
+                            <button onclick="handleButtonClick('≥')">≥</button>
+                            <button onclick="handleButtonClick('≤')">≤</button>
+                            <button onclick="handleButtonClick('≠')">≠</button>
+                            <button onclick="handleBackspace()">⌫</button>
+                            <!-- Row 2 -->
+                            <button onclick="handleButtonClick('sin(')">sin</button>
+                            <button onclick="handleButtonClick('cos(')">cos</button>
+                            <button onclick="handleButtonClick('tan(')">tan</button>
+                            <button onclick="handleButtonClick('log(')">log</button>
+                            <button onclick="handleClear()">C</button>
+                            <button onclick="handleButtonClick('7')">7</button>
+                            <button onclick="handleButtonClick('8')">8</button>
+                            <button onclick="handleButtonClick('9')">9</button>
+                            <button onclick="handleButtonClick('6')">6</button>
+                            <button onclick="handleButtonClick('5')">5</button>
+                            <button onclick="handleButtonClick('4')">4</button>
+                            <button onclick="handleButtonClick('3')">3</button>
+                            <button onclick="handleButtonClick('2')">2</button>
+                            <button onclick="handleButtonClick('1')">1</button>
+                            <button onclick="handleButtonClick('0')">0</button>
+                            <button onclick="handleButtonClick('π')">π</button>
+                            <button onclick="handleButtonClick('+')">+</button>
+                            <button onclick="handleButtonClick('-')">-</button>
+                            <button onclick="handleButtonClick('x')">*</button>
+                            <button onclick="handleButtonClick('/')">/</button>
+                            <button onclick="handleButtonClick('∩')">∩</button>
+                            <button onclick="handleButtonClick('∪')">∪</button>
+                            <button onclick="handleButtonClick('𝓍')">𝓍</button>
+                            <button onclick="handleButtonClick('𝓎')">𝓎</button>
+                            <button onclick="handleButtonClick('𝓏')">𝓏</button>
+                            <button onclick="handleButtonClick('ln(')">ln</button>
+                            <button onclick="handleButtonClick('e')">e</button>
+                            <button onclick="handleButtonClick('%')">%</button>
+                            <button onclick="handleButtonClick('=')">=</button>
+                            <button onclick="handleButtonClick('.')">.</button>
+                        </div>
+                        <button id="submitProblem" class="submit-button">Submit</button>
+                    </div>
                 </div>
                 <button class="submit-btn">Submit</button>
             </div>
-            
 
             <div class="hint-section">
                 <h2>Solution:</h2>
@@ -47,5 +95,6 @@
     </main>
 
     <script src="../static/output.js"></script>
+    <script src="../static/output2.js"></script>
 </body>
 </html>
