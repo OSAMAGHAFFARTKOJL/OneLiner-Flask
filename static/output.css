@@ -121,7 +121,11 @@ p {
     margin-top: 10px;
     margin-right: 600px ;
 }
-
+i{
+    position:absolute;
+    top:30%;
+    left:85%
+}
 .submit-btn:hover {
     background: linear-gradient(135deg, #005f99, #004472);
     transform: translateY(-3px);
