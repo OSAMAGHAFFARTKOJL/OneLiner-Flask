@@ -4,7 +4,7 @@ import traceback
 
 app = Flask(__name__)
 
-AI71_API_KEY = "api71-api-2fcb29da-a589-4632-9e26-47a71786cd25"
+AI71_API_KEY = "api71-api-1f1625af-65fa-4be0-a626-1de7a4c376fc"
 
 @app.route('/')
 def landing():
