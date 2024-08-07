@@ -26,7 +26,7 @@ def get_ai_response(prompt, option):
             messages=[
                 {
                     "role": "system",
-                    "content": f"You are a helpful assistant for {option} problems.Dont answer to the question other than coding and math problems. Don't give the exact answer first and provide meaningful responses only to highly valid queries and don't give response to non-sensical or irrelevant inputs just say sorry it is irrelevant question"
+                    "content": f"You are a helpful assistant for {option} problems.Do not answer to the question other than Coding and Math problems.If case of questions other than math and coding say sorry. Don't give the exact answer first and provide meaningful responses only to highly valid queries and don't give response to non-sensical or irrelevant inputs just say sorry it is irrelevant question"
                 },
                 {
                     "role": "user",
