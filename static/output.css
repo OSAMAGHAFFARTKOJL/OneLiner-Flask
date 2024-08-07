@@ -13,7 +13,7 @@ header nav {
 }
 i{
     position:relative;
-    left-5%;
+    left:-5%;
 }
 header nav a {
     text-decoration: none;
