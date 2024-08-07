@@ -26,6 +26,11 @@ OneLiner is a sophisticated web application designed to streamline the process o
 - **User Feedback**: Visual feedback through loader animations while fetching hints or solutions.
 - **Problem Submission**: Seamless problem input and hint retrieval with an intuitive user interface.
 
+## UserFlow
+
+![ezgif-7-a3adad193f](https://github.com/user-attachments/assets/e757cd6a-dae6-45cb-9fde-00461533a352)
+
+
 ## Installation
 
 To set up the project locally, follow these steps:
